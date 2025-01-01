@@ -11,7 +11,7 @@ import { BlogResponseDto } from '../dto/blog-response.dto';
 export class BlogDatabaseService implements IBlogDatabaseService {
   constructor(
     //@InjectModel(Blog.name) private blogModel: Model<Blog>
-    private blogModel: Blog
+    private blogModel: typeof Blog
 ) {}
 // Ở đây cần có những logic lấy data từ database thật (Model Blog), và từ đó chuyển qua dạng BlogResponseDto
 // Nó nên là 1 hàm khác, sau đó bỏ vào hàm findAll(), findById(), create() ở dưới
