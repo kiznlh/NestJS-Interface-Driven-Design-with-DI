@@ -4,7 +4,7 @@ import { CreateBlogDto } from '../dto/create-blog.dto';
 import { BlogResponseDto } from '../dto/blog-response.dto';
 
 @Injectable()
-export class MockUserDatabaseService implements IBlogDatabaseService {
+export class MockBlogDatabaseService implements IBlogDatabaseService {
   private i = 2;
   private mockBlogs: BlogResponseDto[] = [
     { id: '1', title: 'Mock Blog', content: 'mock content' }
